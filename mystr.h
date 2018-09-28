@@ -1,4 +1,4 @@
-int strlen( char * );
+int strlen( char *str );
 
 char * strncpy( char *dest, char *source, int n);
 
