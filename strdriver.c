@@ -14,7 +14,7 @@ int main() {
   printf("s2: [%s]\n", s2);
   printf("s3: [%s]\n\n", s3);
   
-  printf("Testing strlen(s2):\n[standard]: %d\n[mine]: %d\n\n", strlen(s2), mystrlen(s2));
+  printf("Testing strlen(s2):\n[standard]: %ld\n[mine]: %d\n\n", strlen(s2), mystrlen(s2));
 
   printf("Testing strncpy(s1, s3, 3):\n[standard]: [%s]\n[mine]: [%s]\n\n", strncpy(s1, s3, 3), mystrncpy(s1, s3, 3));
 
