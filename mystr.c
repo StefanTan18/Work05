@@ -1,4 +1,4 @@
-int strlen( char * str ) {
+int mystrlen( char * str ) {
   int i = 0;
   while (* str ) {
     str++;
@@ -7,14 +7,14 @@ int strlen( char * str ) {
   return i;
 }
 
-char * strncpy( char *dest, char *source, int n ){
+char * mystrncpy( char *dest, char *source, int n ){
   for (int i = 0; i < n && source[i]; i++){
     dest[i] = source[i];
   }
   return dest;
 }
 
-char * strcat( char *dest, char *source ) {
+char * mystrcat( char *dest, char *source ) {
   int len = strlen(*dest);
   for (i = 0; i < strlen(*source); i++)
     dest[len + i] = str[i];
@@ -22,7 +22,7 @@ char * strcat( char *dest, char *source ) {
   return dest;
 }
 
-int strcmp( char *s1, char *s2 ){
+int mystrcmp( char *s1, char *s2 ){
   int len1 = strlen( *s1); 
   int len2 = strlen( *s2);
   int n;
@@ -43,7 +43,7 @@ int strcmp( char *s1, char *s2 ){
   }
 }
   
-char * strchr( char *s, char c ) {
+char * mystrchr( char *s, char c ) {
   for (i = 0; i < strlen(*s); i++) {
     if (char[i] == c){
       return &char[i];

@@ -1,9 +1,9 @@
-int strlen( char *str );
+int mystrlen( char *str );
 
-char * strncpy( char *dest, char *source, int n);
+char * mystrncpy( char *dest, char *source, int n);
 
-char * strcat( char *dest, char *source );
+char * mystrcat( char *dest, char *source );
 
-int strcmp( char *s1, char *s2 );
+int mystrcmp( char *s1, char *s2 );
 
-char * strchr( char *s, char c );
+char * mystrchr( char *s, char c );
