@@ -56,8 +56,8 @@ int mystrcmp( char *s1, char *s2 ){
 }
   
 char * mystrchr( char *s, char c ) {
-  for (int i = 0; i < mystrlen(s); i++) {
-    if (s[i] == c){
+  for (int i = 0; i <= mystrlen(s); i++) {
+    if (mystrcmp(&s[i], &c) == 0){
       return &s[i];
     }
   }
