@@ -15,3 +15,12 @@ char * strcat( char *dest, char *source ) {
   return dest;
 }
   
+char * strchr( char *s, char c ) {
+  for (i = 0; i < strlen(*s); i++) {
+    if (char[i] == c){
+      return &char[i];
+    }
+  }
+  return NULL;
+}
+  
