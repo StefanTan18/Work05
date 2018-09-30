@@ -29,19 +29,29 @@ int mystrcmp( char *s1, char *s2 ){
   int len2 = mystrlen( s2);
   int n;
   if (len1 > len2){
-    n = len1;
-  }
-  else{
     n = len2;
   }
-  for (int i = 0; i < n; i++){
+  else{
+    n = len1;
+  }
+  int i = 0;
+  while (i < n){
     if (s1[i] > s2[i]){
       return 1;
     }
     if (s1[i] < s2[i]){
       return -1;
     }
-    return 0;
+    i++;
+  }
+  if (len1 == len2){
+  	return 0;
+  }
+  if (len1 > len2){
+  	return 1;
+  }
+  else {
+  	return -1;
   }
 }
   
